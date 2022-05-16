@@ -47,6 +47,7 @@ namespace Övning2
                     Console.WriteLine ("Summan per sällskap: "+tickets.Sum());
                     break;
 
+                    // Davids kommentar
 
             }
         }
