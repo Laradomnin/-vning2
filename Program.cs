@@ -41,6 +41,12 @@ namespace Övning2
                     //läs in belopp för varje biljett
                     for (int i = 0; i < amount; i++)
                     {
+                        //fråga om ålder för person {i + 1}
+                        //ta emot ålder
+
+                        // if ()..om ålder mindre än 20, lägg på kostnad
+                        // else if ()..ålder mindre än 65, lägg på kostdnad
+                        // else .. annars, lägg på pensionärpris
                         Console.WriteLine($"Skriv in pris per biljett {i + 1} av {amount}");
                         tickets[i] = int.Parse(Console.ReadLine());
                     }
