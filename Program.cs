@@ -42,19 +42,24 @@ namespace Övning2
                     for (int i = 0; i < amount; i++)
                     {
                         //fråga om ålder för person {i + 1}
-                        //ta emot ålder
-
-                        // if ()..om ålder mindre än 20, lägg på kostnad
+                        Console.WriteLine($"Ange ålder per person {i+1} av {amount}");
+                        var a = int.Parse(Console.ReadLine());
+                        //tagit emot ålder
+                        if (a < 21)
+                            // if ()..om ålder mindre än 20, lägg på kostnad
+                            tickets[i] = 90;
+                        else if (a < 65)
+                            tickets[i] = 120;
+                        else tickets[i] = 80;                        
                         // else if ()..ålder mindre än 65, lägg på kostdnad
                         // else .. annars, lägg på pensionärpris
-                        Console.WriteLine($"Skriv in pris per biljett {i + 1} av {amount}");
-                        tickets[i] = int.Parse(Console.ReadLine());
+                         // Console.WriteLine($"Skriv in pris per biljett {i + 1} av {amount}");
+                        //tickets[i] = int.Parse(Console.ReadLine());
                     }
                     Console.WriteLine ("Summan per sällskap: "+tickets.Sum());
                     break;
 
-                    // Davids kommentar
-                    // min ändring
+            
 
 
             }
