@@ -36,11 +36,17 @@ namespace Övning2
                     break;
                 case 3:
                     Console.WriteLine("Hur många biljetter skall beställas?");
-                    var amount = UInt32.Parse(Console.ReadLine());
-                    Console.WriteLine(amount);
-                    new List<> { }
-
+                    var amount = int.Parse(Console.ReadLine());
+                    int[] tickets = new int[amount];
+                    //läs in belopp för varje biljett
+                    for (int i = 0; i < amount; i++)
+                    {
+                        Console.WriteLine($"Skriv in pris per biljett {i + 1} av {amount}");
+                        tickets[i] = int.Parse(Console.ReadLine());
+                    }
+                    Console.WriteLine ("Summan per sällskap: "+tickets.Sum());
                     break;
+
 
             }
         }
